@@ -62,51 +62,95 @@ Codepen Link -  https://codepen.io/Claunt/pen/jOEbLaW
                              }
     
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
-        
+        ID for a single selection, class for a single or multiple selection. Use ID for the title of the page, use class for everything else. 
+    
     20. How do we select classes in CSS?
+        .classname{
+            style:here;
+        }
 
     21. How do we select a p element with a single class of “human””?
+        .human p{
+            style:here;
+        }
 
     22. What is a parent child selector? When would this be useful? 
+        Parent child is how its nested basically, like a family tree. Great grannie at the head and so forth, a div that has a div within a div would be a small family of groupings. Weird question to try and explain.   
+        (Selector is a literal child, useful when styling with precision)
 
     23. How do you select all links within a div with the class of sidebar?
-
+        .sidebar div a{
+            style:here;
+        }
+    
     24. What is a pseudo selector?
-
+        Basically the same thing as a parent child relation, used for specific selections. 
+    
     25. What do we use the change the spacing between lines?
+        Line-height
 
     26. What do we use to change the spacing between letters?
+        letter-spacing 
 
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        Text-transform properties I believe.
 
     28. How do I add a 1px border around my div that is dotted and black?
+        div{
+            border: 1px dotted black;
+        }
 
     29. How do I select everything on the page? 
-
+        Use the HTML selector, or be naughty and use the !important.
+   
     30. How do I write a comment in CSS?
-
+        //Comment here 
+    
     31. How do I find out what file I am in, when I am using the command line? 
+        pwd
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        Git rm, careful not to delete something important. 
 
     34. Why should I use version control? 
+        Helps keep team oriented work organized better. 
 
     35. How often should I commit to github?
+        Personal preference, I usually do it as larger sized project chunks are finished. 
 
     36. What is the command we would use to push our repo up to github? 
+        git push origin 
 
     37. Walk me through Lambda's git flow. 
+        cd location of git folder
+        fork and clone project 
+        git clone urlForProject
+        cd nameOfProject 
+        add Tl collab
+        git checkout -b mason-parker
+        git add .
+        git commit -m 'message'
+        git push origin mason-parker
+        create pull request, make sure first drop down is personal branch not lambdas
+        if TL has accepted collab add as reviewer 
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        Block starts a new line wheras inline stays current.
 
     2. What happens when an element is positioned absolutely? 
+        Not easy to move around anymore. 
 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+        Weird wording for this one, I guess make it block. 
 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Inline block would be a button, block would be p,h1,ul. And inline defaults input and select. 
 
     5. In your own words, explain the box model. What is the fix for the box model? 
+        Box model is the basic understanding that a webpage is made of boxes. Understanding how boxes are shaped and how to manipulate them is helpful. Not sure what you mean by fix for the box model, flexbox?
